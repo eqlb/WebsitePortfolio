@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Weekly Flyer — Costco-inspired</title>
+  <style>
+:root{
+  --brand-red:#E32A36;
+  --brand-blue:#0060A9;
+  --brand-blue-dark:#004A87;
+  --ink:#0F172A;
+  --muted:#6B7280;
+  --bg:#ffffff;
+  --card:#F8FAFC;
+}
+*{box-sizing:border-box}
+html:focus-within{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--ink);
+  background:linear-gradient(180deg,#ffffff, #f6f8fb);
+}
+a{color:var(--brand-blue);text-decoration:none}
+a:focus,button:focus,input:focus{outline:4px solid rgba(0,93,170,.35);outline-offset:2px}
+header{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:saturate(180%) blur(8px);
+  background:rgba(255,255,255,.85);
+  border-bottom:1px solid #e5e7eb;
+}
+.container{max-width:1100px;margin:0 auto;padding:16px 20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand .mark{width:36px;height:36px;border-radius:10px;background:var(--brand-blue);display:grid;place-items:center;color:#fff}
+.hero{
+  position:relative;overflow:hidden;border-radius:20px;color:#fff;
+  background:radial-gradient(60% 60% at 20% 20%,rgba(0,93,170,.55),transparent 60%),
+             radial-gradient(60% 60% at 80% 0%,rgba(227,24,55,.55),transparent 60%),
+             linear-gradient(135deg,#0b1220,#0f172a);
+  box-shadow:0 10px 30px rgba(2,6,23,.2);
+}
+.hero .inner{display:grid;grid-template-columns:1fr;gap:28px;padding:36px}
+@media(min-width: 900px){.hero .inner{grid-template-columns:1.2fr 1fr;padding:56px}}
+.eyebrow{letter-spacing:.2em;text-transform:uppercase;color:#79B3E3;font-size:12px;margin:0 0 8px}
+h1{font-size:clamp(28px,4vw,46px);line-height:1.1;margin:0 0 10px}
+.sub{opacity:.95;max-width:60ch;margin:0 0 24px;font-size:clamp(16px,2.2vw,18px)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:none;
+     padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer}
+.btn.primary{background:#fff;color:#0f172a}
+.btn.secondary{background:var(--brand-blue);color:#fff}
+.section{padding:26px 0}
+.grid{display:grid;gap:18px}
+@media(min-width: 900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)} .grid.cols-4{grid-template-columns:repeat(4,1fr)} .grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:0 6px 18px rgba(2,6,23,.06)}
+.card.pad{padding:18px}
+.title{font-weight:800;font-size:22px;margin:0 0 10px}
+.muted{color:var(--muted)}
+.pill{display:inline-block;background:var(--brand-blue);color:#fff;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700}
+.price{font-weight:800}
+.footer{border:1px solid #e5e7eb;background:#fff;border-radius:16px;padding:16px}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:16px;top:16px;width:auto;height:auto;background:#fff;padding:8px 10px;border-radius:8px;z-index:50}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <div class="container brand">
+    <img src="assets/costco-logo.png" alt="Costco Wholesale" height="36" style="display:block" />
+    <span>Weekly Flyer • Costco Palette</span>
+  </div>
+</header>
+<main id="main" class="container">
+  <section class="hero" role="banner" aria-label="Weekly savings">
+    <div class="inner">
+      <div>
+        <p class="eyebrow">This Week’s Savings</p>
+        <h1>Flyer: Limited‑time deals</h1>
+        <p class="sub">Refresh your cart with new markdowns across electronics, pantry, home, and more.</p>
+        <div class="btns">
+          <button class="btn primary">Clip All Coupons</button>
+          <button class="btn secondary">Email Me Weekly</button>
+        </div>
+      </div>
+      <div aria-hidden="true"><div class="card" style="padding:10px;display:grid;place-items:center;background:#fff;border:1px solid #e5e7eb;border-radius:12px"><img src="assets/c-mark.png" alt="" style="max-width:100%;height:80px;object-fit:contain" /></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid cols-3">
+      <article class="card"><div style="height:160px;background:linear-gradient(135deg,#e0f2fe,#ede9fe);border-radius:16px 16px 0 0"></div><div class="pad" style="padding:14px 16px"><h3 class="title" style="font-size:18px;margin:0 0 6px">Deal Title 1</h3><p class="muted" style="font-size:14px;margin:0 0 10px">Short description of the weekly offer with member savings and expiry date.</p><div style="display:flex;align-items:center;justify-content:space-between"><span class="price">Now $19.19</span><a href="#">Shop →</a></div></div></article><article class="card"><div style="height:160px;background:linear-gradient(135deg,#e0f2fe,#ede9fe);border-radius:16px 16px 0 0"></div><div class="pad" style="padding:14px 16px"><h3 class="title" style="font-size:18px;margin:0 0 6px">Deal Title 2</h3><p class="muted" style="font-size:14px;margin:0 0 10px">Short description of the weekly offer with member savings and expiry date.</p><div style="display:flex;align-items:center;justify-content:space-between"><span class="price">Now $19.29</span><a href="#">Shop →</a></div></div></article><article class="card"><div style="height:160px;background:linear-gradient(135deg,#e0f2fe,#ede9fe);border-radius:16px 16px 0 0"></div><div class="pad" style="padding:14px 16px"><h3 class="title" style="font-size:18px;margin:0 0 6px">Deal Title 3</h3><p class="muted" style="font-size:14px;margin:0 0 10px">Short description of the weekly offer with member savings and expiry date.</p><div style="display:flex;align-items:center;justify-content:space-between"><span class="price">Now $19.39</span><a href="#">Shop →</a></div></div></article><article class="card"><div style="height:160px;background:linear-gradient(135deg,#e0f2fe,#ede9fe);border-radius:16px 16px 0 0"></div><div class="pad" style="padding:14px 16px"><h3 class="title" style="font-size:18px;margin:0 0 6px">Deal Title 4</h3><p class="muted" style="font-size:14px;margin:0 0 10px">Short description of the weekly offer with member savings and expiry date.</p><div style="display:flex;align-items:center;justify-content:space-between"><span class="price">Now $19.49</span><a href="#">Shop →</a></div></div></article><article class="card"><div style="height:160px;background:linear-gradient(135deg,#e0f2fe,#ede9fe);border-radius:16px 16px 0 0"></div><div class="pad" style="padding:14px 16px"><h3 class="title" style="font-size:18px;margin:0 0 6px">Deal Title 5</h3><p class="muted" style="font-size:14px;margin:0 0 10px">Short description of the weekly offer with member savings and expiry date.</p><div style="display:flex;align-items:center;justify-content:space-between"><span class="price">Now $19.59</span><a href="#">Shop →</a></div></div></article><article class="card"><div style="height:160px;background:linear-gradient(135deg,#e0f2fe,#ede9fe);border-radius:16px 16px 0 0"></div><div class="pad" style="padding:14px 16px"><h3 class="title" style="font-size:18px;margin:0 0 6px">Deal Title 6</h3><p class="muted" style="font-size:14px;margin:0 0 10px">Short description of the weekly offer with member savings and expiry date.</p><div style="display:flex;align-items:center;justify-content:space-between"><span class="price">Now $19.69</span><a href="#">Shop →</a></div></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card pad" style="background:linear-gradient(135deg,#fff0f3,#fff7ed)">
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;justify-content:center">
+        <h3 class="title" style="margin:0">Don’t miss next week’s flyer</h3>
+        <p class="muted">Sign up for email notifications with personalized categories.</p>
+        <form class="grid" style="grid-template-columns:1fr auto;gap:10px" aria-label="Subscribe to weekly flyer">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required style="padding:10px 12px;border-radius:12px;border:1px solid #CBD5E1" />
+          <button class="btn secondary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="container footer" role="contentinfo">
+  <strong>Questions?</strong>
+  <p class="muted">Contact support or visit your local warehouse for details.</p>
+</footer>
+</body>
+</html>

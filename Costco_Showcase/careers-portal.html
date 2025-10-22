@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Careers Portal — Costco-inspired</title>
+  <style>
+:root{
+  --brand-red:#E32A36;
+  --brand-blue:#0060A9;
+  --brand-blue-dark:#004A87;
+  --ink:#0F172A;
+  --muted:#6B7280;
+  --bg:#ffffff;
+  --card:#F8FAFC;
+}
+*{box-sizing:border-box}
+html:focus-within{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--ink);
+  background:linear-gradient(180deg,#ffffff, #f6f8fb);
+}
+a{color:var(--brand-blue);text-decoration:none}
+a:focus,button:focus,input:focus{outline:4px solid rgba(0,93,170,.35);outline-offset:2px}
+header{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:saturate(180%) blur(8px);
+  background:rgba(255,255,255,.85);
+  border-bottom:1px solid #e5e7eb;
+}
+.container{max-width:1100px;margin:0 auto;padding:16px 20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand .mark{width:36px;height:36px;border-radius:10px;background:var(--brand-blue);display:grid;place-items:center;color:#fff}
+.hero{
+  position:relative;overflow:hidden;border-radius:20px;color:#fff;
+  background:radial-gradient(60% 60% at 20% 20%,rgba(0,93,170,.55),transparent 60%),
+             radial-gradient(60% 60% at 80% 0%,rgba(227,24,55,.55),transparent 60%),
+             linear-gradient(135deg,#0b1220,#0f172a);
+  box-shadow:0 10px 30px rgba(2,6,23,.2);
+}
+.hero .inner{display:grid;grid-template-columns:1fr;gap:28px;padding:36px}
+@media(min-width: 900px){.hero .inner{grid-template-columns:1.2fr 1fr;padding:56px}}
+.eyebrow{letter-spacing:.2em;text-transform:uppercase;color:#79B3E3;font-size:12px;margin:0 0 8px}
+h1{font-size:clamp(28px,4vw,46px);line-height:1.1;margin:0 0 10px}
+.sub{opacity:.95;max-width:60ch;margin:0 0 24px;font-size:clamp(16px,2.2vw,18px)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:none;
+     padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer}
+.btn.primary{background:#fff;color:#0f172a}
+.btn.secondary{background:var(--brand-blue);color:#fff}
+.section{padding:26px 0}
+.grid{display:grid;gap:18px}
+@media(min-width: 900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)} .grid.cols-4{grid-template-columns:repeat(4,1fr)} .grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:0 6px 18px rgba(2,6,23,.06)}
+.card.pad{padding:18px}
+.title{font-weight:800;font-size:22px;margin:0 0 10px}
+.muted{color:var(--muted)}
+.pill{display:inline-block;background:var(--brand-blue);color:#fff;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700}
+.price{font-weight:800}
+.footer{border:1px solid #e5e7eb;background:#fff;border-radius:16px;padding:16px}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:16px;top:16px;width:auto;height:auto;background:#fff;padding:8px 10px;border-radius:8px;z-index:50}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <div class="container brand">
+    <img src="assets/costco-logo.png" alt="Costco Wholesale" height="36" style="display:block" />
+    <span>Careers Portal • Costco Palette</span>
+  </div>
+</header>
+<main id="main" class="container">
+  <section class="hero" role="banner" aria-label="Build delightful retail experiences">
+    <div class="inner"><div class="card" style="padding:10px;display:none;place-items:center;background:#fff;border:1px solid #e5e7eb;border-radius:12px"><img src="assets/kirkland-logo.png" alt="Kirkland Signature" style="max-width:100%;height:48px;object-fit:contain" /></div>
+      <div>
+        <p class="eyebrow">Work that matters</p>
+        <h1>Build delightful retail experiences</h1>
+        <p class="sub">Design and ship accessible, high‑performance web experiences at scale.</p>
+        <div class="btns">
+          <button class="btn primary">See Open Roles</button>
+          <button class="btn secondary">Meet the Team</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid cols-3">
+      <article class="card pad"><h3 class="title">Design Systems</h3><p class="muted">Cohesive component library with accessibility and performance built‑in.</p></article>
+      <article class="card pad"><h3 class="title">Flexible Teams</h3><p class="muted">Cross‑functional pods pairing designers, engineers, and analysts to ship value weekly.</p></article>
+      <article class="card pad"><h3 class="title">Customer Focus</h3><p class="muted">User research loops and analytics shape what we build and improve.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid cols-3">
+      <article class="card pad"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px"><h3 class="title" style="margin:0;font-size:18px">Web Designer</h3><span class="pill">Full‑time</span></div><p class="muted" style="margin:0 0 10px">Ottawa, ON</p><ul class="muted" style="padding-left:18px;line-height:1.9"><li>Build responsive, accessible pages</li><li>Collaborate in design reviews</li><li>Iterate quickly with data</li></ul><button class="btn secondary" style="width:100%;margin-top:10px">Apply</button></article><article class="card pad"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px"><h3 class="title" style="margin:0;font-size:18px">Front‑end Engineer</h3><span class="pill">Full‑time</span></div><p class="muted" style="margin:0 0 10px">Toronto, ON</p><ul class="muted" style="padding-left:18px;line-height:1.9"><li>Ship component-based UIs</li><li>Own perf & a11y budgets</li><li>Partner with backend</li></ul><button class="btn secondary" style="width:100%;margin-top:10px">Apply</button></article><article class="card pad"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px"><h3 class="title" style="margin:0;font-size:18px">Design Technologist</h3><span class="pill">Contract</span></div><p class="muted" style="margin:0 0 10px">Remote (Canada)</p><ul class="muted" style="padding-left:18px;line-height:1.9"><li>Prototype quickly</li><li>Bridge design & code</li><li>Storybook integration</li></ul><button class="btn secondary" style="width:100%;margin-top:10px">Apply</button></article>
+    </div>
+  </section>
+</main>
+
+<footer class="container footer" role="contentinfo">
+  <strong>Inclusive hiring</strong>
+  <p class="muted">We’re committed to accessibility. If you need accommodations, let us know.</p>
+</footer>
+</body>
+</html>
