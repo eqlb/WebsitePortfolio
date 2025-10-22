@@ -1,0 +1,37 @@
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ARC — Minimal Portfolio</title>
+<style>
+
+*{box-sizing:border-box} html:focus-within{scroll-behavior:smooth}
+body{margin:0}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+:root{--bg:#ffffff;--ink:#111111;--muted:#4b5563}
+body{background:var(--bg);color:var(--ink);font:16px 'Helvetica Neue',Arial,system-ui}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb}
+.wrap{max-width:1200px;margin:0 auto;padding:16px 22px}
+h1{font-size:clamp(46px,8vw,120px);letter-spacing:-.03em;line-height:.95;margin:4px 0}
+.kicker{text-transform:uppercase;letter-spacing:.25em;color:#9ca3af}
+.grid{column-count:1;column-gap:16px}
+@media(min-width:800px){.grid{column-count:3}}
+.item{break-inside:avoid;margin:0 0 16px;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden}
+.caption{padding:12px 14px;color:#6b7280}
+footer{border-top:1px solid #e5e7eb;padding:16px 22px;color:#6b7280}
+</style></head><body>
+<header><div class="wrap"><div style="display:flex;justify-content:space-between"><strong>ARC</strong><nav><a href="#">Work</a> · <a href="#">About</a> · <a href="#">Contact</a></nav></div></div></header>
+<main class="wrap">
+  <p class="kicker">Photography • Web</p>
+  <h1>Minimal. Editorial. Unapologetically large type.</h1>
+  <section class="grid" style="margin-top:10px">
+    <figure class="item"><img src="assets/portfolio-hero.jpg" alt="Hero editorial banner"><figcaption class="caption">Brand Campaign</figcaption></figure>
+    <figure class="item"><img src="assets/blog-hero.jpg" alt="Blue abstract"><figcaption class="caption">Web Redesign</figcaption></figure>
+    <figure class="item"><img src="assets/startup-hero.jpg" alt="Gradient banner"><figcaption class="caption">Landing</figcaption></figure>
+    <figure class="item"><img src="assets/nonprofit-hero.jpg" alt="Water hero"><figcaption class="caption">Campaign</figcaption></figure>
+  </section>
+</main>
+<footer class="wrap"><small>© ARC Studio — Ultra‑minimal template.</small></footer>
+</body></html>

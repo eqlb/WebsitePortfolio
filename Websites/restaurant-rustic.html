@@ -1,0 +1,72 @@
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Ember & Thyme — Bistro</title>
+<style>
+
+*{box-sizing:border-box} html:focus-within{scroll-behavior:smooth}
+body{margin:0}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+:root{--paper:#f7f2e8;--ink:#2b2a28;--accent:#8a2c22;--ring:#d8cbb3}
+body{background:var(--paper);color:var(--ink);font:17px Georgia,'Times New Roman',serif}
+header{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:2px solid var(--ring)}
+.wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:220px 1fr;gap:24px;padding:18px 22px}
+nav a{display:block;padding:10px 0;border-bottom:1px dotted var(--ring)}
+h1{font:700 clamp(36px,5vw,64px)/1.05 'Georgia',serif;margin:0}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;align-items:end}
+.hero .panel{border:2px solid var(--ring);border-radius:6px;background:#fff;box-shadow:0 3px 0 #cdbfa3}
+.hero .menu{padding:18px}
+.menu h2{margin:0 0 10px;font:700 18px Georgia}
+.row{display:flex;justify-content:space-between;border-bottom:1px dotted #c9bca3;padding:8px 0}
+.row span.price{font-weight:700}
+.banner{border:2px solid var(--ring);border-radius:6px;overflow:hidden}
+footer{border-top:2px solid var(--ring);padding:18px 22px;max-width:1200px;margin:22px auto}
+.badge{background:var(--accent);color:#fff;border-radius:999px;padding:2px 8px;font-size:12px}
+</style></head><body>
+<a class="sr-only" href="#main">Skip to content</a>
+<header><div class="wrap" style="grid-template-columns:1fr"><div style="display:flex;justify-content:space-between;align-items:end"><strong style="font-size:26px;letter-spacing:.06em">EMBER & THYME</strong><span>Wed–Sun · 5–10pm · 123 Market St.</span></div></div></header>
+<main id="main" class="wrap">
+  <nav aria-label="Menu">
+    <a href="#starters">Starters</a>
+    <a href="#mains">Mains</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#reserve">Reserve</a>
+  </nav>
+  <section>
+    <div class="hero" style="margin:12px 0 18px">
+      <div class="banner"><img src="assets/restaurant-hero.jpg" alt="Warm bistro banner"></div>
+      <div class="panel menu" id="reserve">
+        <h2>Reservations <span class="badge">New</span></h2>
+        <p>Book a table for up to 6. We hold for 15 minutes.</p>
+        <form style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
+          <input placeholder="Name" aria-label="Name"/><input type="date" aria-label="Date"/><input type="time" aria-label="Time"/>
+          <button style="grid-column:1/-1;border:2px solid var(--ink);background:var(--accent);color:#fff;padding:10px;border-radius:4px;font-weight:700">Book</button>
+        </form>
+      </div>
+    </div>
+
+    <article id="starters" class="panel menu">
+      <h2>Starters</h2>
+      <div class="row"><span>Charred Caesar</span><span class="price">$14</span></div>
+      <div class="row"><span>Smoked Mushrooms</span><span class="price">$12</span></div>
+      <div class="row"><span>Fire‑roasted Beets</span><span class="price">$11</span></div>
+    </article>
+
+    <article id="mains" class="panel menu">
+      <h2>Mains</h2>
+      <div class="row"><span>Coal‑grilled Salmon</span><span class="price">$24</span></div>
+      <div class="row"><span>Ember Burger</span><span class="price">$18</span></div>
+    </article>
+
+    <article id="desserts" class="panel menu">
+      <h2>Desserts</h2>
+      <div class="row"><span>Olive Oil Cake</span><span class="price">$9</span></div>
+      <div class="row"><span>Chocolate Pot</span><span class="price">$8</span></div>
+    </article>
+  </section>
+</main>
+<footer><small>© Ember & Thyme — A rustic bistro. Printed menu style UI.</small></footer>
+</body></html>
