@@ -1,0 +1,9 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* prose classes used in the blog */
+.prose :where(code):not(:where([class~="not-prose"] *)) {
+  @apply rounded bg-slate-100 px-1 py-0.5;
+}
